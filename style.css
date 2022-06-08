@@ -1,0 +1,209 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+    color: #333;
+}
+
+.inner-body {
+    height: 100vh;
+    background-color: #333;
+    color: white;
+}
+
+
+/* Header styles */
+
+header {
+    position: relative;
+    text-align: center;
+    height: 100vh;
+    background: linear-gradient(to right, #4568dc, #b06ab3);
+    color: #fff;
+}
+
+header h1 {
+    padding-top: 100px;
+    padding-top: -webkit-calc(50vh - 113px);
+    padding-top: expression(50vh - 113px);
+    padding-top: -moz-calc(50vh - 113px);
+    padding-top: -o-calc(50vh - 113px);
+    padding-top: calc(50vh - 113px);
+    font-size: 7em;
+    font-weight: 100;
+}
+
+header h1.animated {
+    margin: auto;
+    border-radius: 12px;
+    animation-duration: 3.5s;
+    animation-iteration-count: infinite;
+}
+
+header h2 {
+    font-size: 2em;
+}
+
+header span.animated {
+    position: absolute;
+    margin: auto;
+    right: 0;
+    left: 0;
+    bottom: 50px;
+    height: 4px;
+    width: 4px;
+    border-radius: 2px;
+    background: #fff;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+}
+
+header span::before,
+header span::after {
+    position: absolute;
+    top: -23px;
+    content: "";
+    height: 30px;
+    width: 4px;
+    border-radius: 2px;
+    background: #fff;
+}
+
+header span::before {
+    left: -10px;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+header span::after {
+    right: -10px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+/* Scroll animations styles */
+
+.scroll-animations {
+    display: flex;
+    align-items: center;
+}
+
+.scroll-animations div {
+    flex-grow: 1;
+    padding: 30px;
+    text-align: center;
+    opacity: 0;
+    color: #fefefe;
+}
+
+.symbols-div {
+    width: 100%;
+}
+
+.symbols {
+    font-size: 4em;
+    color: #b06ab3;
+}
+
+.scroll-animations div h3 {
+    font-size: 1.9em;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.row {
+    display: flex;
+}
+
+.languages-div {
+    background: linear-gradient(to right, #4568dc, #b06ab2);
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    color: #fefefe;
+}
+
+.scroll-animations+.languages-div {
+    height: 78vh;
+}
+
+.lang {
+    flex-grow: 1;
+    padding: 30px;
+}
+
+.lang-i {
+    font-size: 10rem;
+}
+
+.loop {
+    animation-iteration-count: infinite;
+}
+.heart-beat{
+    animation:heartBeat 1.5s infinite;
+}
+@keyframes heartBeat{
+    from{
+        transform:scale(1)
+    }
+    14%{
+        transform:scale(1.1)
+
+    }
+    28%{
+        transform:scale(1)
+
+    }
+    42%{
+        transform:scale(1.1)
+
+    }
+    70%{
+        transform:scale(1)
+
+    }
+}
+/* Media queries */
+
+@media (max-width: 759px) {
+    header h1 {
+        font-size: 5em;
+    }
+
+    .scroll-animations {
+        display: block;
+    }
+
+    .scroll-animations div {
+        padding: 20px 80px;
+    }
+
+    .click-animations input,
+    .click-animations textarea,
+    .click-animations button {
+        width: 80%;
+    }
+}
+
+@media (max-width: 475px) {
+    header h1 {
+        font-size: 3.2em;
+    }
+
+    header h2,
+    .funky-animations h3 {
+        font-size: 1.5em;
+    }
+
+}
