@@ -4,11 +4,16 @@
     padding: 0;
 }
 
+html {
+    height: -webkit-fill-available;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     overflow-x: hidden;
     color: #333;
-    height: 200vh;
+    position: absolute;
+    width: 100vw;
 }
 
 ::-webkit-scrollbar {
@@ -29,7 +34,6 @@ body {
 }
 
 .inner-body {
-    height: 150vh;
     background-color: #333;
     color: white;
 }
@@ -142,17 +146,13 @@ header span::after {
 }
 
 .languages-div {
-    background: linear-gradient(to bottom, #333, #4B4D52);
+    position: absolute;
     width: 100%;
     height: 100vh;
     text-align: center;
     color: #fefefe;
 }
-.stars{
-    position:absolute;
-    bottom:100vh;
-    top:100vh
-}
+
 .scroll-animations+.languages-div {
     height: 76vh;
 }
@@ -161,7 +161,6 @@ header span::after {
     flex-grow: 1;
     padding: 16px;
     border-radius: 16px;
-
 }
 
 .hover-color {
@@ -251,13 +250,16 @@ header span::after {
 /* Media queries */
 
 @media (max-width: 759px) {
-
-    body{
-        width:150vw;
-        height:150vh;
+    .lang {
+        flex-grow: 1;
+        padding-right: 8px;
+        padding-left:8px;
+        border-radius: 8px;
+        max-width: 120px;
     }
-    .inner-body{
-        height:150vh;
+    
+    .scroll-animations div{
+        padding:4px;
     }
     .lang-i {
         font-size: 4rem;
@@ -270,21 +272,28 @@ header span::after {
     .scroll-animations {
         display: block;
     }
-
-    .scroll-animations div {
-        padding: 20px 80px;
-    }
-
-    .click-animations input,
-    .click-animations textarea,
-    .click-animations button {
-        width: 80%;
-    }
 }
 
 @media (max-width: 475px) {
+    .lang {
+        flex-grow: 1;
+        padding-right: 4px;
+        padding-left:4px;
+        border-radius: 4px;
+        min-width:0.2vw;
+    }
+    
+    .scroll-animations div{
+        padding:2px;
+    }
+    .inner-body {
+        background-color: #333;
+        color: white;
+        height:150vh;
+    }
+
     .lang-i {
-        margin-bottom: 40px;
+        margin-bottom: 20px;
         font-size: 3rem;
     }
 
@@ -346,7 +355,7 @@ header span::after {
 
 .line:nth-child(1) {
     margin-left: -25%;
-    transform:translateY(-50vh)  rotate(80deg)
+    transform: translateY(-50vh) rotate(80deg)
 }
 
 .line:nth-child(1)::after {
@@ -375,10 +384,6 @@ header span::after {
     animation-delay: 3.5s;
 }
 
-.line:nth-child(3)::after {
-    -webkit-animation-delay: 4.5s;
-    animation-delay: 4.5s;
-}
 @-webkit-keyframes drop {
     0% {
         top: -50%;
@@ -386,7 +391,7 @@ header span::after {
     }
 
     100% {
-        transform: translateX(100%);
+        transform: translateX(100vw);
         top: 110%;
     }
 }

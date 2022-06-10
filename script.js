@@ -17,7 +17,6 @@ $(document).ready(function () {
                 $(this).addClass("fadeInLeft");
                 return;
             }
-            $(this).removeClass("fadeInLeft");
         });
     });
     let title = document.getElementById('landing-page-title');
