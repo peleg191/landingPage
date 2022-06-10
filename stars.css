@@ -49,27 +49,6 @@
   background: transparent;
   box-shadow: 103px 45px #FFF , 1255px 1859px #FFF , 1295px 38px #FFF , 1129px 694px #FFF , 138px 986px #FFF , 695px 1297px #FFF , 902px 844px #FFF , 1875px 252px #FFF , 941px 210px #FFF , 737px 1719px #FFF , 1204px 595px #FFF , 1460px 1037px #FFF , 890px 138px #FFF , 400px 858px #FFF , 249px 41px #FFF , 145px 1449px #FFF , 1268px 485px #FFF , 1754px 1061px #FFF , 1897px 954px #FFF , 1383px 1829px #FFF , 211px 597px #FFF , 381px 415px #FFF , 384px 1697px #FFF , 400px 1766px #FFF , 1641px 427px #FFF , 1736px 677px #FFF , 1516px 328px #FFF , 1725px 95px #FFF , 73px 37px #FFF , 850px 1598px #FFF , 1795px 1455px #FFF , 421px 681px #FFF , 1595px 1823px #FFF , 295px 1672px #FFF , 1396px 371px #FFF , 1264px 711px #FFF , 1884px 302px #FFF , 46px 1654px #FFF , 735px 1523px #FFF , 1168px 1348px #FFF , 1363px 114px #FFF , 1741px 124px #FFF , 580px 270px #FFF , 1149px 619px #FFF , 1605px 1076px #FFF , 226px 1028px #FFF , 697px 1204px #FFF , 1408px 438px #FFF , 1206px 640px #FFF , 974px 921px #FFF , 169px 1419px #FFF , 1215px 1181px #FFF , 63px 1168px #FFF , 335px 730px #FFF , 746px 1627px #FFF , 796px 1398px #FFF , 851px 289px #FFF , 460px 848px #FFF , 815px 662px #FFF , 1313px 837px #FFF , 892px 1413px #FFF , 1405px 1185px #FFF , 1604px 1239px #FFF , 1135px 1341px #FFF , 1279px 265px #FFF , 641px 1652px #FFF , 537px 568px #FFF , 214px 1365px #FFF , 1435px 1422px #FFF , 1371px 1065px #FFF , 287px 990px #FFF , 1311px 332px #FFF , 1806px 1043px #FFF , 195px 1104px #FFF , 1718px 1080px #FFF , 40px 1502px #FFF , 1322px 1456px #FFF , 1709px 1481px #FFF , 763px 1861px #FFF , 956px 1577px #FFF , 338px 85px #FFF , 122px 207px #FFF , 845px 1833px #FFF , 1691px 752px #FFF , 1571px 1192px #FFF , 660px 1080px #FFF , 1918px 548px #FFF , 12px 119px #FFF , 445px 647px #FFF , 1121px 991px #FFF , 309px 362px #FFF , 224px 51px #FFF , 1118px 1590px #FFF , 464px 877px #FFF , 287px 1546px #FFF , 1709px 1603px #FFF , 85px 635px #FFF , 1422px 303px #FFF , 135px 1786px #FFF , 709px 1105px #FFF;
 }
-
-#title {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  right: 0;
-  color: #FFF;
-  text-align: center;
-  font-family: "lato", sans-serif;
-  font-weight: 300;
-  font-size: 50px;
-  letter-spacing: 10px;
-  margin-top: -60px;
-  padding-left: 10px;
-}
-#title span {
-  background: -webkit-linear-gradient(white, #38495a);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
 @keyframes animStar {
   from {
     transform: translateY(0px);
