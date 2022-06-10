@@ -300,11 +300,10 @@ header span::after {
 }
 
 .line {
-
     -webkit-transform:
-        translateY(-35vh) translateX(5px) rotate(72deg);
+        translateY(-35vh) translateX(5px) rotate(80deg);
     transform:
-        translateY(-35vh5) translateX(5px) rotate(72deg);
+        translateY(-35vh) translateX(5px) rotate(80deg);
     position: absolute;
     position: absolute;
     width: 1px;
@@ -312,7 +311,7 @@ header span::after {
     top: 0;
     left: 50%;
     right: 0;
-   
+
     overflow: hidden;
 }
 
@@ -326,7 +325,7 @@ header span::after {
     left: 0;
     right: 0;
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #ffffff 75%, #ffffff 100%);
-    -webkit-animation: drop 7s 0s infinite;
+    -webkit-animation: drop 6s 0s infinite;
     animation: drop 7s 0s infinite;
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
@@ -336,6 +335,7 @@ header span::after {
 
 .line:nth-child(1) {
     margin-left: -25%;
+    transform:translateY(-50vh)  rotate(80deg)
 }
 
 .line:nth-child(1)::after {
@@ -345,11 +345,23 @@ header span::after {
 
 .line:nth-child(2) {
     margin-left: 25%;
+    -webkit-transform:
+        translateY(-50vh) rotate(80deg);
+    transform:
+        translateY(-50vh) rotate(80deg);
+}
+
+.line:nth-child(3) {
+    margin-left: 25%;
+    -webkit-transform:
+        translateY(-50vh) rotate(80deg);
+    transform:
+        translateY(-50vh) rotate(80deg);
 }
 
 .line:nth-child(2)::after {
-    -webkit-animation-delay: 1.5s;
-    animation-delay: 1.5s;
+    -webkit-animation-delay: 3.5s;
+    animation-delay: 3.5s;
 }
 
 @-webkit-keyframes drop {
@@ -359,7 +371,7 @@ header span::after {
     }
 
     100% {
-        transform: translateX(100px);
+        transform: translateX(100vw);
         top: 110%;
     }
 }
