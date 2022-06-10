@@ -14,18 +14,15 @@ body {
     width: 10px;
   }
   
-  /* Track */
   ::-webkit-scrollbar-track {
     background: #333; 
   }
    
-  /* Handle */
   ::-webkit-scrollbar-thumb {
     background: #888; 
     border-radius: 4px;
   }
   
-  /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
     background: #555; 
   }
@@ -34,10 +31,6 @@ body {
     background-color: #333;
     color: white;
 }
-
-
-/* Header styles */
-
 header {
     position: relative;
     text-align: center;
@@ -163,12 +156,11 @@ header span::after {
     padding: 30px;
     border-radius:16px;
 
-
 }
 .lang:hover{
     background: linear-gradient(-45deg, #021f4b, #4c3b71, #115268, #23d5ab);
     background-size: 400% 400%;
-    animation: fadein 2s ease-in,gradient 5s ease infinite;;
+    animation: fadein 2s ease-in,gradient 5s ease infinite;
 
 }
 @keyframes fadein {
@@ -201,7 +193,7 @@ header span::after {
         transform:scale(1)
     }
     14%{
-        transform:scale(1.01)
+        transform:scale(1.06)
 
     }
     28%{
@@ -209,7 +201,7 @@ header span::after {
 
     }
     42%{
-        transform:scale(1.01)
+        transform:scale(1.06)
 
     }
     70%{
