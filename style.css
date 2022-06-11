@@ -185,7 +185,7 @@ header span::after {
 }
 
 .hover-effect {
-    color: #800080;
+    color: #b06ab3;
 }
 
 .hover-effect:hover {
@@ -195,13 +195,9 @@ header span::after {
     animation-fill-mode: forwards;
     cursor: pointer;
 }
-.hover-effect::after{
-    color: #b06ab3;;
-
-}
 @keyframes color-animation {
     0% {
-        color:#800080;
+        color:#b06ab3;
     }
 
     25% {
@@ -209,7 +205,7 @@ header span::after {
     }
 
     50% {
-        color: #240524;
+        color: #640f74;
     }
 
     75% {
