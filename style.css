@@ -293,15 +293,6 @@ header span::after {
 }
 
 @media (max-width: 475px) {
-    .grid-container {
-        display: grid;
-        grid-template-columns: auto auto auto;
-        padding: 10px;
-    }
-    
-    .grid-item {
-        text-align: center;
-    }
     .lang {
         padding-right: 4px;
         padding-left: 4px;
@@ -319,8 +310,8 @@ header span::after {
     }
 
     .lang-i {
-        margin-bottom: 20px;
-        font-size: 3rem;
+        margin-bottom: 15px;
+        font-size: 2rem;
     }
 
     header h1 {
