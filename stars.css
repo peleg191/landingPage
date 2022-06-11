@@ -1,5 +1,5 @@
 .stars {
-  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+  background: radial-gradient(ellipse at center,#8a3e8d 0%, #1b2735 70%, #090a0f 100%);
   overflow: hidden;
   height: 100vh;
 }
