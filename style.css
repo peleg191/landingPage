@@ -146,9 +146,11 @@ header span::after {
     display: flex;
     justify-content: center;
 }
-.mx-2{
-    margin-right:8px;
-    margin-left:8px;
+.ma-2 {
+    margin-right: 8px;
+    margin-left: 8px;
+    margin-top: 8px;
+    margin-bottom: 8px;
 }
 
 .languages-div {
@@ -195,9 +197,10 @@ header span::after {
     animation-fill-mode: forwards;
     cursor: pointer;
 }
+
 @keyframes color-animation {
     0% {
-        color:#b06ab3;
+        color: #b06ab3;
     }
 
     25% {
@@ -213,7 +216,8 @@ header span::after {
     }
 
     100% {
-        color: #b06ab3;;
+        color: #b06ab3;
+        ;
     }
 }
 
@@ -356,7 +360,7 @@ header span::after {
     .inner-body {
         background-color: #333;
         color: white;
-        height: 150vh;
+        height: 100vh;
     }
 
     .lang-i {

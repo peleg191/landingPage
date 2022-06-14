@@ -3,19 +3,6 @@
   overflow: hidden;
   height: 100vh;
 }
-
-@media (max-width: 759px) {
-  .stars{
-    height:150vh;
-  }
-}
-
-@media (max-width: 475px) {
-  .stars{
-    height:150vh;
-  }
-}
-
 #stars {
   width: 1px;
   height: 1px;
